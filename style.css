@@ -7,6 +7,56 @@ body {
     line-height: 1.6;
 }
 
+.btn {
+    background-color: #000080;
+    /* Navy */
+    color: #fff;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    20% {
+        transform: translateX(-100%);
+    }
+
+    40% {
+        transform: translateX(-200%);
+    }
+
+    60% {
+        transform: translateX(-300%);
+    }
+
+    80% {
+        transform: translateX(-200%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.gallery-slide {
+    animation: slide 20s infinite;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.animate-fade-in {
+    animation: fadeIn 1s ease-in;
+}
+
 .header-bg {
     background-color: #1e90ff;
     /* Sea wave blue */
@@ -22,10 +72,19 @@ body {
     /* White */
 }
 
+
 .btn {
     background-color: #000080;
-    /* Navy */
     color: #fff;
+
+}
+
+.btn__link {
+    text-align: center;
+}
+
+.btn__link>a {
+    background: (37, 99, 235, 1)
 }
 
 .btn:hover {
